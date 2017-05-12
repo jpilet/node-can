@@ -19,8 +19,7 @@
     "node-gyp": ">=1.0.0"
   },
   "dependencies": {
-    "nan": "*",
-    "xml2js": ">=0.2.0"
+    "nan": "*"
   },
   "main": "socketcan.js",
   "os": [

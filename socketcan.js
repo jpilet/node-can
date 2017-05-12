@@ -42,8 +42,6 @@ exports.createRawChannel = function(channel, timestamps) { return new can.RawCha
 
 var _signals = require('./build/Release/can_signals');
 
-var kcd = require('./parse_kcd');
-
 /**
  * The actual signal.
  * @class Signal
@@ -352,12 +350,5 @@ DatabaseService.prototype.send = function (msg_name) {
 	this.channel.send(canmsg);
 }
 
-/**
- * @method parseNetworkDescription
- * @param file {string} Path to KCD file to parse
- * @return DB description to be used in DatabaseService
- * @for exports
- */
-exports.parseNetworkDescription = kcd.parseKcdFile;
 exports.DatabaseService = DatabaseService;
 
